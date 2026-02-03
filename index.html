@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHM Online Store</title>
+
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    
+   <nav class="nav-bar">
+    <a href="#"><img src="images/logo.png" title="logo" alt="church logo"></a>
+
+    <input type="search" placeholder="search for devotional edition">
+
+    <!-- Desktop Menu -->
+    <ul class="items">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="https://basileiaharvestministries.org" class="btn" id="hover">Visit the main site</a></li>
+    </ul>
+
+    <!-- Hamburger for Mobile -->
+    <div class="hamburger" aria-label="Menu" role="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="https://basileiaharvestministries.org" class="btn">Visit the main site</a></li>
+    </ul>
+</div>
+
+
+
+    
+
+    <section class="reveal">
+        <div class="dev">
+            <h1>Welcome to our Online Devotional Store</h1>
+        </div>
+
+    <div class="para1">
+        <p>
+            Get access to our free online devotionals for your community growth and family growth and spiritual growth.
+        </p>
+    </div>
+</section>
+    <div class="access">
+        <h1>Unlimited Download!!</h1>
+    </div>
+
+ <div class="card">
+    <div class="devotional-item">
+        <img src="images/com.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/fam.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/com.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/fam.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+</div>
+
+<div class="card">
+    <div class="devotional-item">
+        <img src="images/com.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/fam.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/com.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+
+    <div class="devotional-item">
+        <img src="images/fam.jpg" alt="devotional cover" class="sizing">
+        <a href="downloads/devotionals.pdf" download class="download-btn">Download</a>
+    </div>
+</div>
+   
+<script>
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+});
+
+// Close menu when link is clicked
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("show");
+    });
+});
+</script>
+
+<footer>
+    <div class="h3">
+        <h3>Stay up to date</h3>
+    </div>
+    <div>
+        <input type="email" placeholder="Enter your email" class="input">
+    </div>
+    <div class="sub-btn">
+        <button type="submit">Submit</button>
+    </div>
+
+    <div class="contact">
+        <h2 class="cinfo">Contact Info</h2>
+        <p>Paulker Secretary Opposite, Opolo Secondary School, Yenagoa, Bayelsa State</p>
+        <p> Call Us <a href="tel:+2347030276334" class="tel">+2347030276334</a></p>
+    </div>
+
+    <div class="line"><hr>
+
+        <p class="copyright">&copy; All Rights Reserved. 2026 Mr P Designs</p>
+    </div>
+</footer>
+    
+</body>
+</html>
